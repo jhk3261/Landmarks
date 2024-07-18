@@ -15,4 +15,5 @@ struct ContentView: View {
 
 #Preview { //미리보기 시행
     ContentView()
+        .environment(ModelData())
 }

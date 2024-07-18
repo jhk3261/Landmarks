@@ -9,9 +9,11 @@ import SwiftUI
 
 @main //앱의 진입점 = 여기부터 시작
 struct LandmarksApp: App {
+    @State private var modelData = ModelData()
     var body: some Scene {
         WindowGroup { //화면의 표시된 내용들을 보여줌
             ContentView()
+                .environment(modelData)
         }
     }
 }
